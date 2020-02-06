@@ -1,4 +1,22 @@
-img {
+#main {
+    background-color: #88bdbc;
+}
+
+#title {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
+
+#tagline {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+
+#tribute-info {
+    font-family: monospace;
+}
+
+#image {
     display: block;
     max-width: 100%;
     height: auto;
