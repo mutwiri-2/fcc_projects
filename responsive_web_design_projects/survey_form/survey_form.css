@@ -1,3 +1,16 @@
+:root {
+    --color-prussian: #003152;
+    --color-space-alpha: rgba(29,41,81, 0.8);
+    --color-white: #f3f3f3;
+    --color-brown: #5b342e;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body::before {
     content: '';
     z-index: -1;
@@ -10,4 +23,88 @@ body::before {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--color-white, #f3f3f3);
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media(min-width: 576px){
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+#title {
+    text-align: center;
+    font-weight: bolder;
+    color: var(--color-brown);
+    margin: 0 0.6rem;
+}
+
+#description {
+    text-align: center;
+    font-style: italic;
+    color: var(--color-prussian);
+    background-color:  rgba(115,194,251,0.1);
+    text-shadow: 1px 1px 1px var(--color-prussian);
+    font-weight: 400;
+    margin: 0 0.3rem 0.6rem 0.3rem;
+}
+
+/* form */
+
+#survey-form {
+    background-color: var(--color-space-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+}
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 5px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+input,
+button.container,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button {
+    border: none;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.3rem 0.8rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid teal;
 }
