@@ -72,8 +72,12 @@ body {
     margin: 0 0.3rem 0.6rem 0.3rem;
 }
 
-p {
+p,
+#name-label,
+#email-label,
+#number-label {
     text-shadow: 1px 1px 1px wheat;
+    font-size: 20px;
 }
 
 /* form */
