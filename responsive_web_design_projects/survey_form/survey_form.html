@@ -16,34 +16,34 @@
         <form action="" id="survey-form">
             <div class="form-group">
                 <label for="name" id="name-label">Name</label>
-                <input type="text" name="name" id="name" placeholder="enter your name">
+                <input type="text" name="name" id="name" class="form-control" placeholder="enter your name" required>
             </div>
             <div class="form-group">
                 <label for="email" id="email-label">Email</label>
-                <input type="email" name="email" id="email" placeholder="enter your email">
+                <input type="email" name="email" id="email" placeholder="enter your email" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="number" id="number-label">Age</label>
-                <input type="number" name="age" id="number" placeholder="age" min="16" max="90">
+                <label for="number" id="number-label">Age <span>(not required)</span></label>
+                <input type="number" name="age" id="number" placeholder="Age" min="16" max="90">
             </div>
             <div class="form-group">
                 <p>Your gender</p>
-                <label for="male">
-                    <input type="radio" name="gender" id="male" value="male">Male
+                <label>
+                    <input type="radio" name="gender" value="male">Male
                 </label>
-                <label for="female">
-                    <input type="radio" name="gender" id="female" value="female">Female
+                <label>
+                    <input type="radio" name="gender" value="female">Female
                 </label>
-                <label for="transgender">
-                    <input type="radio" name="gender" id="transgender" value="transgender">Transgender
+                <label>
+                    <input type="radio" name="gender" value="transgender">Transgender
                 </label>
-                <label for="prefer_not-to-say">
-                    <input type="radio" name="gender" id="prefer-not-to-say" value="prefer-not-to-say">Prefer not to say
+                <label>
+                    <input type="radio" name="gender" value="prefer-not-to-say">Prefer not to say
                 </label>
             </div>
             <div class="form-group">
                 <p>What type of traveller are you?</p>
-                <select name="traveller-type" id="traveller-type">
+                <select name="traveller-type" id="dropdown">
                     <option value="" selected disabled>Select what best describes you</option>
                     <option value="thrill seeker">Thrill seeker</option>
                     <option value="collector">Collector</option>
@@ -84,10 +84,12 @@
                 </label>
             </div>
             <div class="form-group">
-                <p>Any extra comment?</p>
-                <textarea name="extra-info" id="extra-info" placeholder="enter comments..."></textarea>
+                <p>Any extra information?</p>
+                <textarea name="extra-info" id="extra-info" placeholder="enter any extra information..." class="input-textarea"></textarea>
             </div>
-            <button type="submit" id="submit">Submit</button>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-btn">Submit</button>
+            </div>
         </form>
     </div>
 </body>
