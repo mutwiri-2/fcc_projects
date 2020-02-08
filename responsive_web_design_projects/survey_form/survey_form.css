@@ -86,7 +86,7 @@ label {
 }
 
 input,
-button.container,
+button,
 select,
 textarea {
     margin: 0;
