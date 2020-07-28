@@ -14,6 +14,11 @@
     font-family: 'Indie Flower', cursive;
 }
 
+section {
+    max-width: 768px;
+    margin: auto;
+}
+
 #tribute-info {
     font-family: monospace;
     text-align: left;
